@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PH-Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container">
+    <nav>
+        <div class="flex justify-around mt-5">
+            <img src="Logo.png" alt="">
+            <button id="sort-btn" class="btn btn-active">Sort by view</button>
+            <button class="btn btn-error">Blog</button>
+        </div>
+    </nav>
+    <section class="flex justify-center items-center">
+        <div id="btn-container" class="mt-12 space-x-4 ml-24">
+            <!-- <button class="btn btn-ghost bg-slate-700 text-white">All</button>
+            <button class="btn btn-ghost bg-slate-700 text-white">Music</button>
+            <button class="btn btn-ghost bg-slate-700 text-white">Comedy</button>
+            <button class="btn btn-ghost bg-slate-700 text-white">Drawing</button> -->
+        </div>
+    </section>
+    <section class="mt-12">
+        <div id="error-element" class="hidden mt-12">
+            <img class="mx-auto" src="./Icon.png" alt="">
+            <h1 class="text-3xl mt-3 text-center text-slate-600">Ops there have no videos</h1>
+        </div>
+        <div id="card-container" class="container mx-auto grid grid-cols-3 gap-3  justify-center">
+
+        </div>
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
