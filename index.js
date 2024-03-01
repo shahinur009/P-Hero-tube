@@ -59,23 +59,24 @@ const fetchDataCategories = (categoryId, sortByView) => {
                 }
                 const newCard = document.createElement('div')
                 newCard.innerHTML = `
-                <div class="card w-full bg-base-100 shadow-xl">
+                <div class="card w-full h- bg-base-100 shadow-xl">
                     <figure class="overflow-hidden h-72">
-                    <img class="w-full" src="${video.thumbnail}" alt="" />
+                    <img class="w-full h-full" src="${video.thumbnail}" alt="" />
                     
                     </figure>
                     <div class="card-body">
                         <div class="flex space-x-4 justify-start items-start">
                             <div>
-                                <img class="w-12 h-12 rounded-full" src="${video.authors[0].profile_picture}">
+                                <img class=" h-12 rounded-full" src="${video.authors[0].profile_picture}">
                             </div>
                             <div>
                                 <h2 class="card-title">${video.title}</h2>
-                                <div>
-                                    <p class= " ">${video.authors[0].profile_name}</p>
-                                    ${verifiedBadge}
+                                <p class= " ">${video.authors[0].profile_name}</p>
+                                <div class="flex gap-2 mt-2">
+                                ${verifiedBadge}
+                                <p class="">${video.others.views}</p>
                                 </div>
-                                <p class="mt-3">${video.others.views}</p>
+                                
                             </div>
                         </div>
                     </div>   
